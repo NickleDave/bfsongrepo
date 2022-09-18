@@ -7,7 +7,7 @@ name = "bfsongrepo"
 description = 'Site and scripts for the Bengalese Finch Song Repository dataset'
 readme = "README.md"
 requires-python = ">=3.8"
-license = "MIT"
+license = {file = "LICENSE"}
 keywords = []
 authors = [
   { name = "David Nicholson", email = "nickledave@users.noreply.github.com" },
