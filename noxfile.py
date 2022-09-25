@@ -54,6 +54,10 @@ def coverage(session) -> None:
     )
 
 
+DOCS_SRC_DIR = "docs"
+DOCS_BUILD_DIR = "docs/build/html"
+
+
 @nox.session
 def docs(session: nox.Session) -> None:
     """
@@ -65,14 +69,23 @@ def docs(session: nox.Session) -> None:
 
        nox -s docs -- autobuild
 
-    Otherwise the docs will be built once using
+    Otherwise the docs will be built once using sphinx-build
     """
     session.install(".[docs]")
     if session.posargs:
         if "autobuild" in session.posargs:
             print("Building docs at http://127.0.0.1:8000 with sphinx-autobuild -- use Ctrl-C to quit")
-            session.run("sphinx-autobuild", "docs/", "docs/build/html")
+            session.run("sphinx-autobuild", DOCS_SRC_DIR, DOCS_BUILD_DIR)
         else:
             print("Unsupported argument to docs")
     else:
-        session.run("sphinx-build", "-nW", "--keep-going", "-b", "html", "docs/", "docs/build/html")
+        session.run("sphinx-build", "-nW", "--keep-going", "-b", "html", DOCS_SRC_DIR, DOCS_BUILD_DIR)
+
+
+@nox.session(name='publish-to-github')
+def publish_to_github(session: nox.Session) -> None:
+    """Publish built site to GitHub
+    
+    Uses 'ghp-import' to push contents of DOCS_BUILD_DIR to branch 'gh-pages'"""
+    session.install("ghp-import")
+    session.run("ghp-import", "-n", "-p", "-o", DOCS_BUILD_DIR)
