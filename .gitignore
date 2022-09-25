@@ -17,3 +17,6 @@ build/
 
 # Sphinx
 docs/_build/
+
+# downloaded data
+bfsongrepo/
