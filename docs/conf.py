@@ -33,8 +33,19 @@ master_doc = 'index'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'pydata_sphinx_theme'
+html_theme = 'furo'
 html_static_path = ['_static']
+html_title = "Bengalese Finch Song Repository"
+
+# -- theme configuration -----------------------------------------------
+html_sidebars = {
+    "**": [
+        "sidebar/scroll-start.html",
+        "sidebar/brand.html",
+        "sidebar/navigation.html",
+        "sidebar/scroll-end.html",
+    ]
+}
 
 # -- myst configuration -------------------------------------------------
 myst_enable_extensions = [
