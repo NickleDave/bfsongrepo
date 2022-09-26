@@ -43,9 +43,9 @@ tests = [
   "tweetynet >=0.7.0",
 ]
 docs = [
+  "furo",
   "linkify-it-py >=2.0.0",
   "myst-parser >=0.17.0",
-  "pydata-sphinx-theme >=0.10.1",
   "sphinx >=3.4.1",
   "sphinxext-opengraph >=0.5.1",
   "sphinx-copybutton >=0.4.0",
