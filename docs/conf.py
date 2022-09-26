@@ -54,4 +54,4 @@ myst_enable_extensions = [
     "replacements",
 ]
 
-myst_heading_anchors = 4
+myst_heading_anchors = 3
