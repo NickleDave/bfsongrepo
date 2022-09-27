@@ -35,7 +35,6 @@ dependencies = [
 tests = [
   "pytest >=6.2.1",
   "pytest-cov >=2.11.1",
-  "tweetynet >=0.7.0",
 ]
 docs = [
   "furo",
@@ -43,7 +42,8 @@ docs = [
   "jupytext >=1.13.8",
   "librosa >=0.9.1",
   "linkify-it-py >=2.0.0",
-  "myst-parser >=0.17.0",
+  "matplotlib >=3.6.0",
+  "myst-nb >=0.15.0",
   "pyprojroot >=0.2.0",
   "sphinx >=3.4.1",
   "sphinxext-opengraph >=0.5.1",
@@ -55,6 +55,6 @@ docs = [
 dev = [
   "twine >=3.3.0",
   "black >=20.8b1",
-  "ipython >=7.0"
+  "ipython >=7.0",
   "bfsongrepo[tests,docs]",
 ]
