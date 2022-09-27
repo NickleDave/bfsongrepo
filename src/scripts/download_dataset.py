@@ -1,6 +1,7 @@
 """script to download Bengalese Finch Song Repository dataset from Figshare
 https://figshare.com/articles/dataset/Bengalese_Finch_song_repository/4805749
 """
+from __future__ import annotations
 import argparse
 import json
 import pathlib
