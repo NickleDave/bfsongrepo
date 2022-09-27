@@ -15,7 +15,7 @@ release = '0.1.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "myst_parser",
+    "myst_nb",
     'sphinx_copybutton',
     "sphinx_design",
     'sphinxext.opengraph',
@@ -58,3 +58,5 @@ myst_enable_extensions = [
 ]
 
 myst_heading_anchors = 3
+
+nb_execution_excludepatterns = 'scripts/*'
