@@ -258,7 +258,7 @@ and also consider benchmarking against related algorithms.
 Our impression is that it will require a community of researchers 
 working together to advance the state of the art in this area.
 
-## Cited by:
+## Cited by
 
 The following works use and/or cite this dataset. 
 Works are listed in order of publication. 
