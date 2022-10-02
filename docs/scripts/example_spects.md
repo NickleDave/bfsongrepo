@@ -35,6 +35,11 @@ def plot_spect(S_db, sr, ylim=None,
 
     if ylim:
         ax.set_ylim(ylim)
+    
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.set_xlabel('')
+    ax.set_ylabel('')
 ```
 
 ```{code-cell} ipython3
@@ -195,7 +200,8 @@ def make_fig(audio_path, annot_path, fig_path, tlim=None):
 ```
 
 ```{code-cell} ipython3
-DATASET_ROOT = pyprojroot.here() / 'data/bfsongrepo'
+# DATASET_ROOT = pyprojroot.here() / 'data/bfsongrepo'
+DATASET_ROOT = pathlib.Path('/media/pimienta/Backup/vocal/BFSongRepo/')
 
 EXAMPLE_AUDIO_ANNOT_BY_BIRD_ID = {
     'bl26lb16': {
