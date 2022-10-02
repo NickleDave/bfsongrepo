@@ -38,17 +38,13 @@ html_static_path = ['_static']
 
 # -- theme configuration -----------------------------------------------
 
-html_theme = 'furo'
+html_theme = 'pydata_sphinx_theme'
+
+html_theme_options = {
+  "show_toc_level": 3
+}
 
 html_title = "Bengalese Finch Song Repository"
-html_sidebars = {
-    "**": [
-        "sidebar/scroll-start.html",
-        "sidebar/brand.html",
-        "sidebar/navigation.html",
-        "sidebar/scroll-end.html",
-    ]
-}
 
 # -- myst configuration -------------------------------------------------
 myst_enable_extensions = [
