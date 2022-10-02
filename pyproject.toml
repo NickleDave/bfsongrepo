@@ -37,13 +37,13 @@ tests = [
   "pytest-cov >=2.11.1",
 ]
 docs = [
-  "furo",
   "jupyterlab >=3.0.3",
   "jupytext >=1.13.8",
   "librosa >=0.9.1",
   "linkify-it-py >=2.0.0",
   "matplotlib >=3.6.0",
   "myst-nb >=0.15.0",
+  "pydata-sphinx-theme >=0.10.1",
   "pyprojroot >=0.2.0",
   "sphinx >=3.4.1",
   "sphinxext-opengraph >=0.5.1",
