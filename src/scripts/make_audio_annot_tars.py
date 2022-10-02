@@ -1,9 +1,9 @@
-"""Make .tar.gz archives 
-containing audio and annotations 
+"""Make .tar.gz archives
+containing audio and annotations
 from Bengalese Finch Song Repository dataset.
 
-Command-line options allow selecting 
-which audio and annotation format to put 
+Command-line options allow selecting
+which audio and annotation format to put
 in the archives.
 """
 import argparse
@@ -47,7 +47,7 @@ def tar_audio_annot(dataset_root,
         bird_dir = dataset_root / bird_id
 
         date_dirs = [
-            date_dir 
+            date_dir
             for date_dir in bird_dir.iterdir()
             if date_dir.is_dir()
             ]
@@ -61,15 +61,22 @@ def tar_audio_annot(dataset_root,
             print(
                 f'will create archive: {archive_path}'
             )
-            
+
             if not dry_run:
                 if skip_exists:
                     if archive_path.exists():
                         print('Archive exists already, skipping.')
 
                 audio_paths = sorted(date_dir.glob(f'*{audio_ext}'))
+                if audio_ext == '.cbin':
+                    # we need to get .rec ("record") files,
+                    # in addition to .cbin audio files
+                    # since the .rec files have the sampling rate
+                    # and are used by `evfuncs.load_cbin` to load .cbin audio
+                    audio_paths.extend(
+                        sorted(date_dir.glob('*.rec'))
+                    )
                 annot_paths = sorted(date_dir.glob(f'*{annot_ext}'))
-
 
                 tar = tarfile.open(archive_path, 'w:gz')
                 try:
@@ -110,8 +117,8 @@ def main(dataset_root=DEFAULT_DATASET_ROOT,
         audio_ext = '.wav'
         annot_ext = '.csv'
 
-    tar_audio_annot(dataset_root, tar_dst, 
-                    audio_ext, annot_ext, 
+    tar_audio_annot(dataset_root, tar_dst,
+                    audio_ext, annot_ext,
                     dry_run, skip_exists)
 
 
