@@ -7,15 +7,15 @@
 ## About this dataset
 
 This is a collection of song from four Bengalese finches
-recorded in the Sober lab at Emory University.
-The song has been annotated by hand by two of the authors.
+recorded in the [Sober lab at Emory University](https://scholarblogs.emory.edu/soberlab/).
+The song has been annotated manually by two of the authors.
 
 We share this collection as a means of testing
 different machine learning algorithms
 for classifying the elements of birdsong, known as syllables.
 
 The dataset is housed on Figshare here:
-https://figshare.com/articles/dataset/Bengalese_Finch_song_repository/4805749
+https://figshare.com/articles/dataset/Bengalese_Finch_song_repository/4805749.
 This site is provided as documentation.
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -54,12 +54,12 @@ All recordings analyzed here are from undirected song (i.e., no other bird was p
 All procedures were approved by
 the Emory University Institutional Animal Care and Use Committee.
 
-Recordings were made with a lapel microphone,
-fed into an equalizer
+Recordings were made with a lavalier microphone,
+fed into a preamplifier
 that then ran to a National Instruments DAQ board.
 An automated data acquisition program in LabView ("evTAF")
 detected when audio amplitude stayed abve a threshold
-for a target period which then triggered automatic recordings
+for a target period, which then triggered automatic recordings
 until amplitude dropped again for another fixed period.
 The files thus recorded were then sorted with a separate program
 so that the final dataset consisted only of audio files
