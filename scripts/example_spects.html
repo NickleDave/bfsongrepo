@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="<no title>" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="scripts/example_spects.html" />
+  
+    <title>&lt;no title&gt; &#8212; Bengalese Finch Song Repository</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1e1de1a1873e13ef5536" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1e1de1a1873e13ef5536" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1e1de1a1873e13ef5536">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fa-solid fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">Bengalese Finch Song Repository</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" data-toggle="tooltip">
+    <a class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="fa-regular fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" data-toggle="tooltip">
+    <a class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="fa-regular fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pathlib</span>
+
+<span class="kn">import</span> <span class="nn">librosa</span>
+<span class="kn">import</span> <span class="nn">librosa.display</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pyprojroot</span>
+
+<span class="kn">import</span> <span class="nn">crowsetta</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_spect</span><span class="p">(</span><span class="n">S_db</span><span class="p">,</span> <span class="n">sr</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">hop_length</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">win_length</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">x_coords</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+               <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">ax</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="n">figsize</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">)</span>
+
+    <span class="n">img</span> <span class="o">=</span> <span class="n">librosa</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">specshow</span><span class="p">(</span><span class="n">S_db</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">,</span> <span class="n">hop_length</span><span class="o">=</span><span class="n">hop_length</span><span class="p">,</span> <span class="n">win_length</span><span class="o">=</span><span class="n">win_length</span><span class="p">,</span> 
+                                   <span class="n">x_coords</span><span class="o">=</span><span class="n">x_coords</span><span class="p">,</span> <span class="n">y_axis</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">x_axis</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">ylim</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">ylim</span><span class="p">)</span>
+    
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_labels</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span>
+                <span class="n">t</span><span class="p">,</span>
+                <span class="n">t_shift_label</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>
+                <span class="n">y</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span>
+                <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                <span class="n">text_kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;plot labels on an axis.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    labels : list, numpy.ndarray</span>
+<span class="sd">    t : numpy.ndarray</span>
+<span class="sd">        times (in seconds) at which to plot labels</span>
+<span class="sd">    t_shift_label : float</span>
+<span class="sd">        amount (in seconds) that labels should be shifted to the left, for centering.</span>
+<span class="sd">        Necessary because width of text box isn&#39;t known until rendering.</span>
+<span class="sd">    y : float, int</span>
+<span class="sd">        height on y-axis at which segments should be plotted.</span>
+<span class="sd">        Default is 0.5.</span>
+<span class="sd">    ax : matplotlib.axes.Axes</span>
+<span class="sd">        axes on which to plot segment. Default is None,</span>
+<span class="sd">        in which case a new Axes instance is created</span>
+<span class="sd">    text_kwargs : dict</span>
+<span class="sd">        keyword arguments passed to the `Axes.text` method</span>
+<span class="sd">        that plots the labels. Default is None.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    text_list : list</span>
+<span class="sd">        of text objections, the matplotlib.Text instances for each label</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">text_kwargs</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">text_kwargs</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">if</span> <span class="n">ax</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span>
+
+    <span class="n">text_list</span> <span class="o">=</span> <span class="p">[]</span>    
+    
+    <span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">t_lbl</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+        <span class="n">t_lbl</span> <span class="o">-=</span> <span class="n">t_shift_label</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">t_lbl</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="o">**</span><span class="n">text_kwargs</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">)</span>
+        <span class="n">text_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">text_list</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_segments</span><span class="p">(</span>
+    <span class="n">annot</span><span class="p">,</span>
+    <span class="n">label_color_map</span><span class="p">,</span>
+    <span class="n">ax</span><span class="p">,</span>
+    <span class="n">tlim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">y_segments</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span>
+    <span class="n">h_segments</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span>
+    <span class="n">y_labels</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+    <span class="n">text_kwargs</span><span class="o">=</span><span class="kc">None</span>
+<span class="p">):</span>
+    <span class="n">rectangles</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">labels</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">onsets</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">offsets</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">seg</span> <span class="ow">in</span> <span class="n">annot</span><span class="o">.</span><span class="n">seq</span><span class="o">.</span><span class="n">segments</span><span class="p">:</span>
+        <span class="n">label</span><span class="p">,</span> <span class="n">onset_s</span><span class="p">,</span> <span class="n">offset_s</span> <span class="o">=</span> <span class="n">seg</span><span class="o">.</span><span class="n">label</span><span class="p">,</span> <span class="n">seg</span><span class="o">.</span><span class="n">onset_s</span><span class="p">,</span> <span class="n">seg</span><span class="o">.</span><span class="n">offset_s</span>
+        <span class="k">if</span> <span class="n">tlim</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">offset_s</span> <span class="o">&lt;</span> <span class="n">tlim</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">or</span> <span class="n">onset_s</span> <span class="o">&gt;</span> <span class="n">tlim</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="k">continue</span>
+        <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+        <span class="n">onsets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">onset_s</span><span class="p">)</span>
+        <span class="n">offsets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">offset_s</span><span class="p">)</span>
+    
+    <span class="n">labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+    <span class="n">onsets</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">onsets</span><span class="p">)</span>
+    <span class="n">offsets</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">offsets</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">onset_s</span><span class="p">,</span> <span class="n">offset_s</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">onsets</span><span class="p">,</span> <span class="n">offsets</span><span class="p">):</span>
+        <span class="n">rectangle</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">(</span>
+            <span class="p">(</span><span class="n">onset_s</span><span class="p">,</span> <span class="n">y_segments</span><span class="p">),</span> 
+            <span class="n">width</span><span class="o">=</span><span class="n">offset_s</span> <span class="o">-</span> <span class="n">onset_s</span><span class="p">,</span>
+            <span class="n">height</span><span class="o">=</span><span class="n">h_segments</span><span class="p">,</span>
+            <span class="n">facecolor</span><span class="o">=</span><span class="n">label_color_map</span><span class="p">[</span><span class="n">label</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">rectangle</span><span class="p">)</span>
+        <span class="n">rectangles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rectangle</span><span class="p">)</span>
+    
+    <span class="n">t</span> <span class="o">=</span> <span class="n">onsets</span> <span class="o">+</span> <span class="p">((</span><span class="n">offsets</span> <span class="o">-</span> <span class="n">onsets</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">plot_labels</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y_labels</span><span class="p">,</span> <span class="n">text_kwargs</span><span class="o">=</span><span class="n">text_kwargs</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">tlim</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">tlim</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">rectangles</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_fig</span><span class="p">(</span><span class="n">audio_path</span><span class="p">,</span> <span class="n">annot_path</span><span class="p">,</span> <span class="n">fig_path</span><span class="p">,</span> <span class="n">tlim</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">tg</span> <span class="o">=</span> <span class="n">crowsetta</span><span class="o">.</span><span class="n">formats</span><span class="o">.</span><span class="n">by_name</span><span class="p">(</span><span class="s1">&#39;simple-seq&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="n">annot_path</span><span class="p">)</span>
+    <span class="n">annot</span> <span class="o">=</span> <span class="n">tg</span><span class="o">.</span><span class="n">to_annot</span><span class="p">()</span>
+
+    <span class="n">labelset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">segment</span><span class="o">.</span><span class="n">label</span> <span class="k">for</span> <span class="n">segment</span> <span class="ow">in</span> <span class="n">annot</span><span class="o">.</span><span class="n">seq</span><span class="o">.</span><span class="n">segments</span><span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;tab20&#39;</span><span class="p">)</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">cmap</span><span class="p">(</span><span class="n">ind</span><span class="p">)</span> <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">labelset</span><span class="p">))]</span>
+    <span class="n">label_color_map</span> <span class="o">=</span> <span class="p">{</span><span class="n">label</span><span class="p">:</span> <span class="n">color</span> <span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">labelset</span><span class="p">,</span> <span class="n">colors</span><span class="p">)}</span>
+
+    <span class="n">y</span><span class="p">,</span> <span class="n">sr</span> <span class="o">=</span> <span class="n">librosa</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">audio_path</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>  <span class="c1"># sr=None to keep original sampling rate</span>
+    <span class="c1"># y = y[tlim_inds_snippet[0]:tlim_inds_snippet[1]]</span>
+    
+    <span class="n">hop_length</span><span class="o">=</span><span class="mi">256</span>
+    <span class="n">win_length</span><span class="o">=</span><span class="mi">512</span>
+
+    <span class="n">D</span> <span class="o">=</span> <span class="n">librosa</span><span class="o">.</span><span class="n">stft</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">hop_length</span><span class="o">=</span><span class="n">hop_length</span><span class="p">,</span> <span class="n">win_length</span><span class="o">=</span><span class="n">win_length</span><span class="p">)</span>
+    <span class="n">S_db</span> <span class="o">=</span> <span class="n">librosa</span><span class="o">.</span><span class="n">amplitude_to_db</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">D</span><span class="p">),</span> <span class="n">ref</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">)</span>
+
+    <span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">S_db</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="n">x_coords</span> <span class="o">=</span> <span class="n">librosa</span><span class="o">.</span><span class="n">frames_to_time</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">,</span> <span class="n">hop_length</span><span class="o">=</span><span class="n">hop_length</span><span class="p">,</span> <span class="n">n_fft</span><span class="o">=</span><span class="mi">2048</span><span class="p">)</span>
+    <span class="c1"># x_coords = x_coords + TLIM_S_ORIGINAL[0]</span>
+
+    <span class="n">FONT_SIZE</span> <span class="o">=</span> <span class="mi">14</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">FONT_SIZE</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;axes&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="n">FONT_SIZE</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;xtick&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="n">FONT_SIZE</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;ytick&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="n">FONT_SIZE</span><span class="p">)</span>
+
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+    <span class="n">gs</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_gridspec</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">ax_arr</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">ax_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[:</span><span class="mi">3</span><span class="p">,:])</span>
+    <span class="p">)</span>
+    <span class="n">ax_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">3</span><span class="p">:,:])</span>
+    <span class="p">)</span>
+
+    <span class="n">ax_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ax_arr</span><span class="p">)</span>
+
+    <span class="n">plot_spect</span><span class="p">(</span><span class="n">S_db</span><span class="p">,</span> <span class="n">sr</span><span class="p">,</span> 
+               <span class="n">hop_length</span><span class="o">=</span><span class="n">hop_length</span><span class="p">,</span> <span class="n">win_length</span><span class="o">=</span><span class="n">win_length</span><span class="p">,</span> 
+               <span class="n">x_coords</span><span class="o">=</span><span class="n">x_coords</span><span class="p">,</span>
+               <span class="n">ylim</span><span class="o">=</span><span class="p">[</span><span class="mi">128</span><span class="p">,</span> <span class="mi">11000</span><span class="p">],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">tlim</span><span class="p">:</span>
+        <span class="n">ax_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">tlim</span><span class="p">)</span>
+
+    <span class="n">_</span> <span class="o">=</span> <span class="n">plot_segments</span><span class="p">(</span><span class="n">annot</span><span class="o">=</span><span class="n">annot</span><span class="p">,</span> <span class="n">label_color_map</span><span class="o">=</span><span class="n">label_color_map</span><span class="p">,</span> 
+                      <span class="n">text_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span> <span class="n">FONT_SIZE</span><span class="p">},</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax_arr</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">tlim</span><span class="o">=</span><span class="n">tlim</span><span class="p">)</span>
+
+    <span class="n">ax_arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xticks</span><span class="o">=</span><span class="p">[],</span> <span class="n">yticks</span><span class="o">=</span><span class="p">[])</span>
+    <span class="n">ax_arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_frame_on</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig_path</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># DATASET_ROOT = pyprojroot.here() / &#39;data/bfsongrepo&#39;</span>
+<span class="n">DATASET_ROOT</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/media/pimienta/Backup/vocal/BFSongRepo/&#39;</span><span class="p">)</span>
+
+<span class="n">EXAMPLE_AUDIO_ANNOT_BY_BIRD_ID</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;bl26lb16&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;audio&#39;</span><span class="p">:</span> <span class="s1">&#39;041912/bl26lb16_190412_0721.20144.wav&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;annot&#39;</span><span class="p">:</span> <span class="s1">&#39;041912/bl26lb16_190412_0721.20144.cbin.csv&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;tlim&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">22.4</span><span class="p">,</span> <span class="mf">23.8</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;gr41rd51&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;audio&#39;</span><span class="p">:</span> <span class="s1">&#39;061912/gr41rd51__3part_SYLc_th4191_belowhits_190612_0710.239.wav&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;annot&#39;</span><span class="p">:</span> <span class="s1">&#39;061912/gr41rd51__3part_SYLc_th4191_belowhits_190612_0710.239.cbin.csv&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;tlim&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mf">5.2</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;gy6or6&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;audio&#39;</span><span class="p">:</span> <span class="s1">&#39;032212/gy6or6_baseline_220312_0836.3.wav&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;annot&#39;</span><span class="p">:</span> <span class="s1">&#39;032212/gy6or6_baseline_220312_0836.3.cbin.csv&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;tlim&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">4.25</span><span class="p">,</span> <span class="mf">5.9</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;or60yw70&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;audio&#39;</span><span class="p">:</span> <span class="s1">&#39;092712/or60yw70_270912_0729.1196.wav&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;annot&#39;</span><span class="p">:</span> <span class="s1">&#39;092712/or60yw70_270912_0729.1196.cbin.csv&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;tlim&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.3</span><span class="p">,</span> <span class="mf">6.35</span><span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="n">IMAGES_ROOT</span> <span class="o">=</span> <span class="n">pyprojroot</span><span class="o">.</span><span class="n">here</span><span class="p">()</span> <span class="o">/</span> <span class="s1">&#39;docs/images&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">bird_id</span><span class="p">,</span> <span class="n">data_d</span> <span class="ow">in</span> <span class="n">EXAMPLE_AUDIO_ANNOT_BY_BIRD_ID</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">audio_path</span><span class="p">,</span> <span class="n">annot_path</span> <span class="o">=</span> <span class="n">data_d</span><span class="p">[</span><span class="s1">&#39;audio&#39;</span><span class="p">],</span> <span class="n">data_d</span><span class="p">[</span><span class="s1">&#39;annot&#39;</span><span class="p">]</span>
+    <span class="n">tlim</span> <span class="o">=</span> <span class="n">data_d</span><span class="p">[</span><span class="s1">&#39;tlim&#39;</span><span class="p">]</span>
+    <span class="n">audio_path</span> <span class="o">=</span> <span class="n">DATASET_ROOT</span> <span class="o">/</span> <span class="n">bird_id</span> <span class="o">/</span> <span class="n">audio_path</span>
+    <span class="n">annot_path</span> <span class="o">=</span> <span class="n">DATASET_ROOT</span> <span class="o">/</span> <span class="n">bird_id</span> <span class="o">/</span> <span class="n">annot_path</span>
+    <span class="n">fig_path</span> <span class="o">=</span> <span class="n">IMAGES_ROOT</span> <span class="o">/</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">bird_id</span><span class="si">}</span><span class="s1">_key.png&#39;</span>
+    <span class="n">make_fig</span><span class="p">(</span><span class="n">audio_path</span><span class="p">,</span> <span class="n">annot_path</span><span class="p">,</span> <span class="n">fig_path</span><span class="p">,</span> <span class="n">tlim</span><span class="o">=</span><span class="n">tlim</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+<div id="searchbox"></div>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../_sources/scripts/example_spects.md.txt">
+        <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1e1de1a1873e13ef5536"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, David Nicholson.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
