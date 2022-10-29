@@ -198,11 +198,11 @@ paste the corresponding command below into a terminal
 
    .. code-tab:: shell macOS / Linux
 
-      curl -sSL https://raw.githubusercontent.com/NickleDave/bfsongrepo/main/src/scripts/download_dataset.py | python3 - --audio-annot-type wav-simpleseq
+      curl -sSL https://raw.githubusercontent.com/NickleDave/bfsongrepo/main/src/scripts/download_dataset.py | python3 - --audio-annot-type wav-csv
 
    .. code-tab:: shell Windows
 
-      (Invoke-WebRequest -Uri https://raw.githubusercontent.com/NickleDave/bfsongrepo/main/src/scripts/download_dataset.py -UseBasicParsing).Content | py - --audio-annot-type wav-simpleseq
+      (Invoke-WebRequest -Uri https://raw.githubusercontent.com/NickleDave/bfsongrepo/main/src/scripts/download_dataset.py -UseBasicParsing).Content | py - --audio-annot-type wav-csv
 :::
 
 #### .cbin audio + .not.mat annotations
