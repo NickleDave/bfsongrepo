@@ -59,7 +59,7 @@ def convert(dataset_root, dst):
             for cbin_path in pbar:
                 pbar.set_description(
                     f'Converting: {cbin_path.name}'
-                )from ast import Not
+                )
                 # https://stackoverflow.com/a/42544738/4906855
                 audio, sampfreq = evfuncs.load_cbin(cbin_path)
                 audio = audio.astype(np.float64) / 32768.0
@@ -74,7 +74,7 @@ def convert(dataset_root, dst):
                     f'Converting: {notmat_path.name}'
                 )
                 notmat = crowsetta.formats.seq.NotMat.from_file(notmat_path)
-                csv_dst = dst_date_dir / f"{notmat_path.name.replace('.not.mat', '')}.csv"
+                csv_dst = dst_date_dir / f"{notmat_path.name.replace('cbin.not.mat', 'wav.csv')}"
                 simpleseq = crowsetta.formats.seq.SimpleSeq(
                     onsets_s=notmat.onsets,
                     offsets_s=notmat.offsets,
